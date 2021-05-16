@@ -23,8 +23,8 @@ python test.py models/joint7.pt
 I used the [BSDS300](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/segbench/) image dataset with additive gaussian noise like the authors.
 
 2 *trained reaction diffusion* (TRD) models were considered like in the paper :
-- TRD with 8 stages, 24 filters of size 5x5
-- TRD with 8 stages, 48 filters of size 7x7
+- TRD with 8 stages, 24 filters of size 5x5 (stored in `models/joint5.pt`)
+- TRD with 8 stages, 48 filters of size 7x7 (stored in `models/joint7.pt`)
 
 An Adam optimizer was used instead of the L-BFGS algorithm. During training, 180x180 patches randomly cropped from training images are fed to the network (GPU memory limitations might force you to reduce the size).
 
@@ -37,7 +37,7 @@ Here are the results of the experiment on the test set :
 | PSNR (dB) |                  |                  |                  |                  |
 |-----------|:----------------:|:----------------:|:----------------:|:----------------:|
 |           |       σ=15       |                  |       σ=25       |                  |
-| Stage     | models/joint5.pt | models/joint7.pt | models/joint5.pt | models/joint7.pt |
+| **Stage**     | `models/joint5.pt` | `models/joint7.pt` | `models/joint5.pt` | `models/joint7.pt` |
 | 2         |       29.34      |       27.49      |       26.04      |       24.92      |
 | 5         |       30.44      |       29.90      |       27.86      |       27.65      |
 | 8         |       31.00      |       31.23      |       **30.13**      |       **30.26**      |
