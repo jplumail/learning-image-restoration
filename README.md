@@ -1,9 +1,10 @@
 ## Learning Image Restoration
 
-![Noisy image](examples/noisy.png)
-![Restored image](examples/restored.png)
+Noisy image | Restored image
+:--:|:--:
+![Noisy image](examples/noisy.png) | ![Restored image](examples/restored.png)
 
-Pytorch implementation of *[On learning optimized reaction diffusion processes for effective image restoration](https://arxiv.org/abs/1503.05768)* by Yunjin Chen, Wei Yu and Thomas Pock.
+Pytorch unofficial implementation of *[On learning optimized reaction diffusion processes for effective image restoration](https://arxiv.org/abs/1503.05768)* by Yunjin Chen, Wei Yu and Thomas Pock.
 
 ---
 
